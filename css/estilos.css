@@ -9,14 +9,14 @@ body {
 
 header {
   background-image: url(../img/img01.jpg);
-  height: 90vh;
+  height: 100vh;
   box-sizing: border-box; }
   header .navegador {
     display: flex; }
   header .container-fluid .navbar-brand {
     color: #fafafa;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px; }
+    font-size: 60px; }
   header .navbar-toggler-icon {
     background-color: #fafafa;
     border: solid 4px;
@@ -30,7 +30,7 @@ header {
       color: #fdfdfd;
       padding: 50px;
       margin: 30px;
-      font-size: 40px;
+      font-size: 50px;
       font-weight: 300;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
   header .icono {
@@ -40,6 +40,7 @@ header {
     justify-content: center; }
 
 main {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,13 +75,13 @@ main {
     padding: 20px; }
   main h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 300;
     padding: 20px;
     color: aliceblue; }
   main .lista {
     display: block;
-    padding: 40px;
+    padding: 20px;
     margin: 10px; }
     main .lista p {
       color: aliceblue;
@@ -91,3 +92,39 @@ main {
     main .lista .bi {
       color: aliceblue;
       padding: 5px; }
+  main .contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+  main .contacto h3 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: 200; }
+  main .texto {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  main .formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 10px; }
+  main .form {
+    padding: 5px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200; }
+    main .form .btn {
+      margin: 10px;
+      font-size: 25px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 200; }
+    main .form .footer {
+      display: flex;
+      position: absolute; }
