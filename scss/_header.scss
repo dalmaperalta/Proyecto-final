@@ -1,36 +1,37 @@
 header{
-
-    background-image: url(../img/Producción-Musical.jpeg);
-    height: 500px;
+    background-image: url(../img/img01.jpg);
+    height: 90vh;
     box-sizing: border-box;
     
+    
+
     .navegador{
+    
     display: flex;
     
    }
 
     .container-fluid .navbar-brand{
-        color: aliceblue;
+        color: rgb(250, 250, 250);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 40px;
     }
 
     .navbar-toggler-icon{
-        background-color: aliceblue;
+        background-color: rgb(250, 250, 250);
         border: solid 4px;
         font-size: 20px;
     }
     .nav-link{
-        color: aliceblue;
+        color: rgb(255, 255, 255);
     }
    
     .titulo{
-        display: flex;
         flex-direction: column;
         text-align: center;
         
         h1{
-            color: aliceblue;
+            color: rgb(253, 253, 253);
             padding: 50px;
             margin: 30px;
             font-size: 40px;
@@ -41,7 +42,7 @@ header{
     } 
 
     .icono{
-        color: aliceblue;
+        color: rgb(255, 255, 255);
         display: flex;
         align-items: center;
         justify-content: center;

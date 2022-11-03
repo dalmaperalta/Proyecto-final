@@ -1,0 +1,33 @@
+.lista{
+    justify-content: center;
+    display:grid;
+
+      grid-template-columns: repeat(2, 1fr);
+
+      grid-template-rows: 100px 60px; 
+
+      grid-column-gap: 20px;
+      grid-row-gap: 10px;
+    
+   }
+
+   .post{
+    display: flex;
+    background-color: aqua;
+   }
+
+   .produ{
+    background-color: brown;
+   }
+
+   .grabacion{
+     background-color: darkblue;
+   }
+
+   .compo{
+     background-color: cadetblue;
+   }
+
+   .sesion{
+    background-color: coral;
+   }

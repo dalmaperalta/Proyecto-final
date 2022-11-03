@@ -1,39 +1,40 @@
-@charset "UTF-8";
 body {
   font-family: sans-serif;
   width: 100;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
   position: relative;
   min-height: 100vh; }
 
 header {
-  background-image: url(../img/Producción-Musical.jpeg);
-  height: 500px;
+  background-image: url(../img/img01.jpg);
+  height: 90vh;
   box-sizing: border-box; }
   header .navegador {
     display: flex; }
   header .container-fluid .navbar-brand {
-    color: aliceblue;
+    color: #fafafa;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px; }
   header .navbar-toggler-icon {
-    background-color: aliceblue;
+    background-color: #fafafa;
     border: solid 4px;
     font-size: 20px; }
   header .nav-link {
-    color: aliceblue; }
+    color: white; }
   header .titulo {
-    display: flex;
     flex-direction: column;
     text-align: center; }
     header .titulo h1 {
-      color: aliceblue;
+      color: #fdfdfd;
       padding: 50px;
       margin: 30px;
       font-size: 40px;
       font-weight: 300;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
   header .icono {
-    color: aliceblue;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -61,17 +62,32 @@ main {
   main p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
-    font-size: 25px; }
-  main .album {
+    font-size: 25px;
+    text-align: center;
+    justify-content: center; }
+  main .servicio {
+    background-image: url(../img/guitarra.jpg);
     display: flex;
     flex-direction: column;
     padding: 30px;
-    text-align: center; }
+    text-align: center;
+    padding: 20px; }
   main h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     font-weight: 300;
-    padding: 10px; }
-  main .foto {
-    width: 300px;
-    height: 200px; }
+    padding: 20px;
+    color: aliceblue; }
+  main .lista {
+    display: block;
+    padding: 40px;
+    margin: 10px; }
+    main .lista p {
+      color: aliceblue;
+      text-align: center; }
+    main .lista h3 {
+      color: aliceblue;
+      font-size: 30px; }
+    main .lista .bi {
+      color: aliceblue;
+      padding: 5px; }
