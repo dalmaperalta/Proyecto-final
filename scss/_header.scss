@@ -1,13 +1,34 @@
 header{
     background-image: url(../img/img01.jpg);
     height: 100vh;
-    width: auto;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translate(360deg);    
+
+    transition-property: all;
+    transition-delay: 3s;
+    transition-duration:1s;
+    transition-timing-function: ease-in-out;
+    
+    
+    
     
    
     .titulo{
         flex-direction: column;
         text-align: center;
+
+        transform: translateY(-500px);
+        
+        animation-name: entrada-superior;
+        animation-duration:5s;
+        animation-iteration-count:infinite;
+        animation-timing-function: ease-in-out;
+    
+        
         
         h1{
             color: rgb(253, 253, 253);
@@ -16,9 +37,23 @@ header{
             font-size: 50px;
             font-weight: 300;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
         }
     
     } 
+
+    @keyframes entrada-superior {
+        0%{
+            transform: translateY(-400);
+        }
+        50%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+
 
     .icono{
         color: rgb(255, 255, 255);
@@ -26,5 +61,28 @@ header{
         align-items: center;
         justify-content: center;
     }
+
+    .caja{
+        background-image: url(../img/img6.jpg);
+        background-position: center;
+        width: 300px;
+        height: 300px;
+        display:block;
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+    }
+        
+   
+
+    .be{
+        color: rgb(253, 253, 253);
+            padding: 50px;
+            margin: 30px;
+            font-size: 50px;
+            font-weight: 300;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
     
-}
+

@@ -4,7 +4,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    
+    
 
     ul li{
         
@@ -15,15 +16,19 @@ main{
         
     }
     .redes{
-      padding: 30px;
+      padding: 20px;
     }
     
     .red{
-        
-        padding: 4px;
+        padding: 3px;
         color:black;
         text-align: center;
-        margin: 20px;
+        margin: 5px;
+     }
+     .red:hover{
+       padding: 10px;
+       transform: scale(9);
+       color: black;
      }
 
      .text{
@@ -31,9 +36,10 @@ main{
         flex-direction: column;
         padding: 30px;
         text-align: center;
+
      }
 
-     p{
+     .parr{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: 200;
         font-size: 25px;
@@ -51,14 +57,22 @@ main{
         padding: 20px;
      }
 
-     h2{
+     .servis{
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 60px;
         font-weight: 300;
         padding: 20px;
         color: aliceblue;
+        transform: translateY(-500px);
+        
+        animation-name: entrada-superior;
+        animation-duration:3s;
+        animation-iteration-count:infinite;
+        animation-timing-function: ease-in-out;
         
      }
+
+  
 
      .lista {
       display: block;
@@ -85,15 +99,23 @@ main{
       display: flex;
       flex-direction: column;
       padding: 20px;
+
      }
      
-     .contacto h3{
+     .contac{
       display: flex;
       text-align: center;
       justify-content: center;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 40px;
       font-weight: 200;
+      transform: translateY(-500px);
+        
+      animation-name: entrada-superior;
+      animation-duration:2s;
+      animation-iteration-count:infinite;
+      animation-timing-function: ease-in-out;
+
      }
      .texto{
       padding: 10px;
@@ -109,6 +131,21 @@ main{
       display: flex;
       flex-direction: column;
       padding: 10px;
+     }
+
+     .formu{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 40px;
+      font-weight: 200;
+      transform: translateY(-500px);
+        
+      animation-name: entrada-superior;
+      animation-duration:3s;
+      animation-iteration-count:infinite;
+      animation-timing-function: ease-in-out;
      }
 
      .form{
@@ -164,5 +201,70 @@ main{
 
       } 
 
+      .beats{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         padding: 10px;
+      }
+       
+      .seg{
+      padding: 20px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 30px;
+      font-weight: 200;
+      transform: translateY(-500px);
+        
+      animation-name: entrada-superior;
+      animation-duration:3s;
+      animation-iteration-count:infinite;
+      animation-timing-function: ease-in-out;
+      }
+
+      .lista-canc{
+         display:flex;
+         flex-direction: column;
+         justify-content: center;
+         padding: 20px;
+         
+      }
+
+      .tit-lista{
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         font-size: 35px;
+         font-weight: 100;
+      }
+
+      .canciones{
+         display: flex;
+         flex-direction: column;
+         
+      }
+
+      .t{
+         padding: 10px;
+         display: flex;
+         flex-direction: column;
+         text-align: start;
+         font-size: 30px;
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         color: black;
+         
+      }
+     
+      @keyframes entrada-superior {
+         0%{
+             transform: translateY(-400);
+         }
+         50%{
+             transform: translateY(0);
+         }
+         100%{
+             transform: translateY(0);
+         }}
+      
 }
 
