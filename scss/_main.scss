@@ -8,28 +8,35 @@ main{
     
 
     ul li{
-        
         line-height:45px;
         list-style-type: none;
         display: inline;
         text-align: center;
         
+        
     }
     .redes{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
       padding: 20px;
+      position:sticky; 
+      bottom:0; 
+      left:0;
+      width:100%;
+      height: 90px;
+     background-color: rgb(72, 80, 72);
+
     }
     
     .red{
         padding: 3px;
-        color:black;
+        color:rgb(255, 255, 255);
         text-align: center;
+        justify-content: center;
         margin: 5px;
      }
-     .red:hover{
-       padding: 10px;
-       transform: scale(9);
-       color: black;
-     }
+    
 
      .text{
         display: flex;
@@ -63,16 +70,8 @@ main{
         font-weight: 300;
         padding: 20px;
         color: aliceblue;
-        transform: translateY(-500px);
-        
-        animation-name: entrada-superior;
-        animation-duration:3s;
-        animation-iteration-count:infinite;
-        animation-timing-function: ease-in-out;
-        
-     }
 
-  
+     }
 
      .lista {
       display: block;
@@ -109,12 +108,6 @@ main{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 40px;
       font-weight: 200;
-      transform: translateY(-500px);
-        
-      animation-name: entrada-superior;
-      animation-duration:2s;
-      animation-iteration-count:infinite;
-      animation-timing-function: ease-in-out;
 
      }
      .texto{
@@ -130,7 +123,11 @@ main{
      .formulario{
       display: flex;
       flex-direction: column;
+      text-align: center;
+      justify-content: center;
       padding: 10px;
+     
+
      }
 
      .formu{
@@ -140,12 +137,7 @@ main{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 40px;
       font-weight: 200;
-      transform: translateY(-500px);
-        
-      animation-name: entrada-superior;
-      animation-duration:3s;
-      animation-iteration-count:infinite;
-      animation-timing-function: ease-in-out;
+      
      }
 
      .form{
@@ -163,20 +155,27 @@ main{
          font-size: 25px;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          font-weight: 200;
-      }
+         
 
-     }
+         transition-property: all;
+         transition-duration: 1s;
+      }
+      .btn:hover{
+          transform: scale(1);
+      }
+   }
+  
       .titulo{
          display: flex;
          flex-direction: column;
          align-items: center;
          text-align: center;
-         background-color: rgb(0, 0, 0);
+         
 
          h1 {
             padding: 20px;
             font-size: 30px;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: 200;
 
@@ -184,7 +183,7 @@ main{
          h2{
             padding: 20px;
             font-size: 20px;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: 100;
 
@@ -192,7 +191,7 @@ main{
          h3{
             padding: 20px;
             font-size: 20px;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: 100;
 
@@ -200,6 +199,24 @@ main{
          }
 
       } 
+     .album{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+        h2{
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         font-weight: 100;
+        }
+     }
+     .fotos{
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+     }
+     .foto{
+      padding: 5px;
+     }
 
       .beats{
          display: flex;
@@ -216,19 +233,14 @@ main{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 30px;
       font-weight: 200;
-      transform: translateY(-500px);
-        
-      animation-name: entrada-superior;
-      animation-duration:3s;
-      animation-iteration-count:infinite;
-      animation-timing-function: ease-in-out;
+     
       }
 
       .lista-canc{
          display:flex;
          flex-direction: column;
          justify-content: center;
-         padding: 20px;
+        padding: 20p;
          
       }
 
@@ -254,17 +266,15 @@ main{
          color: black;
          
       }
-     
-      @keyframes entrada-superior {
-         0%{
-             transform: translateY(-400);
-         }
-         50%{
-             transform: translateY(0);
-         }
-         100%{
-             transform: translateY(0);
-         }}
-      
+    .foto{
+
+      transition-property: all;
+      transition-duration: 1s;
+   }
+   .foto:hover{
+       transform: scale(1.5);
+   }
+   
+    
 }
 

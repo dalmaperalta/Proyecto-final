@@ -5,61 +5,34 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    transform: translate(360deg);    
-
-    transition-property: all;
-    transition-delay: 3s;
-    transition-duration:1s;
-    transition-timing-function: ease-in-out;
-    
-    
-    
     
    
     .titulo{
+        display: flex;
         flex-direction: column;
         text-align: center;
 
-        transform: translateY(-500px);
+       
+        transform: translateY (-500px);
+        animation-name: entrada ;
+        animation-duration:2s;
         
-        animation-name: entrada-superior;
-        animation-duration:5s;
-        animation-iteration-count:infinite;
         animation-timing-function: ease-in-out;
-    
         
         
-        h1{
+       h1{
             color: rgb(253, 253, 253);
             padding: 50px;
             margin: 30px;
             font-size: 50px;
             font-weight: 300;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-           
         }
-    
-    } 
-
-    @keyframes entrada-superior {
-        0%{
-            transform: translateY(-400);
+        .lucas{
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
         }
-        50%{
-            transform: translateY(0);
-        }
-        100%{
-            transform: translateY(0);
-        }
-    }
-
-
-    .icono{
-        color: rgb(255, 255, 255);
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .caja{
@@ -82,7 +55,118 @@ header{
             font-size: 50px;
             font-weight: 300;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+              
+            transform: translateY (-500px);
+            animation-name: entrada ;
+            animation-duration:2s;
+            animation-timing-function: ease-in-out;
+        
         }
+
+
+   .co{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+   }
+
+   .contac{
+    text-align: center;
+    color: rgb(253, 253, 253);
+    padding: 30px;
+    margin: 20px;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+      
+    transform: translateY (-500px);
+    animation-name: entrada ;
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
+ 
+}
+
+.texto{
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+  .fo{display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+
+  }
+
+  .formu{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    color: aliceblue;
+  }
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;}
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 200;
+        color: aliceblue;
+  
+        .btn{
+           margin: 10px;
+           font-size: 25px;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-weight: 200;
+           color: aliceblue;
+
+           transition-property: all;
+           transition-duration: 1s;
+        }
+        .btn:hover{
+            transform: scale(1);
+        }
+  
+       }
+       .div{
+       text-align: center;
+       }
+
+      
+
+   @keyframes entrada {
+    0%{
+        transform: translateY(-500px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
     }
     
 
