@@ -58,8 +58,8 @@ main{
      .servicio{
         background-image: url(../img/guitarra.jpg);
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        padding: 30px;
         text-align: center;
         padding: 20px;
      }
@@ -71,16 +71,30 @@ main{
         padding: 20px;
         color: aliceblue;
 
+            
+    transform: translateY (-500px);
+    animation-name: entrada ;
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
      }
 
      .lista {
-      display: block;
-      padding: 20px;
-      margin: 10px;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+
+     
        p{
+         display:flex;
+         flex-direction: column;
+         justify-content:center;
          color: aliceblue;
          text-align: center;
-        
+         margin:  10px;
+         font-size: 20px;
+         
        }
 
        h3{
@@ -90,7 +104,8 @@ main{
 
        .bi{
          color: aliceblue;
-         padding: 5px;
+         height: 60px;
+         width: 60px;
        }
      }
 
@@ -120,14 +135,13 @@ main{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      }
       
-     .formulario{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      padding: 10px;
      
-
+     .texto{
+      padding: 10px;
+     }
+      
+     .formulario{
+      padding: 10px;
      }
 
      .formu{
@@ -139,7 +153,6 @@ main{
       font-weight: 200;
       
      }
-
      .form{
       display: flex;
       flex-direction: column;
@@ -266,6 +279,23 @@ main{
          color: black;
          
       }
+
+      .iframe{
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         padding: 30px;
+        }
+        
+        .escu{
+             padding: 20px;
+             font-size: 30px;
+             color: rgb(0, 0, 0);
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             font-weight: 200;
+ 
+          }
+
     .foto{
 
       transition-property: all;
@@ -276,5 +306,14 @@ main{
    }
    
     
+   @keyframes entrada {
+      0%{
+          transform: translateY(-500px);
+      }
+  
+      100%{
+          transform: translateY(0px);
+      }
+  }
 }
 
