@@ -40,32 +40,7 @@
       }
 
 
-  .caja{
-
-      width: 500px;
-      height: 300px;
-      display:flex;
-      display: inline-flex;
-      justify-content:baseline;
-      position: relative;
-     
-  }
-    .be-div{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }  
-  .be{
-        color: rgb(0, 0, 0);
-          padding: 50px;
-          margin: 30px;
-          font-size: 100px;
-          font-weight: 500;
-      
-      }
-  .caja-v{
-   justify-content: space-between;
-  }
+ 
 
  .co{
   display:flex;
@@ -296,65 +271,67 @@ main{
        padding: 20px;
        margin: 100px;
        
-     
-
       display: grid;
-      grid-template-areas:
-      "div-uno div-dos";
+      grid-template-columns: repeat(2, 1fr);
+      
+      grid-template-rows: 50px 100px;
 
-
-      grid-template-rows: 50px 50px;
-
-      grid-column-gap:80px;
-      grid-row-gap: 200px;
+      grid-column-gap:20px;
+      grid-row-gap: 20px;
       }
 
-      .div-uno{
-        grid-area: div-uno;
-        display: flex;
-        flex-direction: column;
-      }
-      .div-dos{
-        grid-area: div-dos;
-        display: flex;
-        flex-direction: column;
-        
-      }
         
       .texto{
        padding: 20px;
       }
        
       .formulario{
-       padding: 20px;
-      }
-
+        display:block;
+        flex-direction: column;
+        
+       }
+  
+       .formu{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        font-weight: 200;
+        
+       }
+       .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 300;
+  
       
+     }
+
       .album{
-       margin:20px;
+      padding:40px;
        display: flex;
        flex-direction:column;
        justify-content:center;
        text-align: center;
-         h2{
-          padding: 20px;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-          font-weight: 100;
-         }
       }
-
+        
+      .album h2{
+        padding: 40px;
+        font-weight: 100;
+       }
+      
       .fotos{
-       display:flex;
-       flex-direction:row;
-       padding: 30px;
-       margin: 40px;
-      }
-
-      .foto{
         display: flex;
-        text-align: justify;
-       padding: 5px;
-      }
+        flex-direction: column;
+        padding: 30px;
+       }
+     
 
       
       .titulo{
@@ -388,24 +365,6 @@ main{
         
         }}
 
-
-       .beats{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 10px;
-       }
-        
-       .seg{
-       padding: 20px;
-       display: flex;
-       text-align: center;
-       justify-content: center;
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       font-size: 30px;
-       font-weight: 200;
-      
-       }
  
        .lista-canc{
           display:flex;
@@ -426,24 +385,6 @@ main{
           flex-direction: column;
           
        }
- 
-       .t{
-          padding: 10px;
-          display: flex;
-          flex-direction: column;
-          text-align: start;
-          font-size: 30px;
-          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-          color: black;
-          
-       }
- 
-       .iframe{
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-          padding: 30px;
-         }
          
          .escu{
               padding: 20px;
@@ -454,15 +395,6 @@ main{
   
            }
  
-     .foto{
- 
-       transition-property: all;
-       transition-duration: 1s;
-    }
-    .foto:hover{
-        transform: scale(1.5);
-    }
-    
      
     @keyframes entrada {
        0%{

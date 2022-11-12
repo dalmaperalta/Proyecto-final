@@ -213,11 +213,13 @@ main{
 
       } 
      .album{
+     
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
         h2{
+         padding: 20px;
          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          font-weight: 100;
         }
@@ -227,65 +229,51 @@ main{
       flex-direction: column;
       padding: 30px;
      }
-     .foto{
-      padding: 5px;
+
+     .rounded{
+
+      padding: 10px;
+      height: 250px;
+      width: 300px;
+
      }
 
-      .beats{
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         padding: 10px;
-      }
-       
-      .seg{
-      padding: 20px;
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 30px;
-      font-weight: 200;
-     
-      }
-
       .lista-canc{
+        
          display:flex;
          flex-direction: column;
          justify-content: center;
-        padding: 20p;
+         padding: 40px;
          
       }
 
       .tit-lista{
+         display: flex;
+         flex-direction: column;
+         text-align: center;
          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          font-size: 35px;
          font-weight: 100;
+
       }
 
       .canciones{
          display: flex;
          flex-direction: column;
-         
       }
 
       .t{
-         padding: 10px;
+         border: solid;
+         padding: 15px;
          display: flex;
          flex-direction: column;
          text-align: start;
          font-size: 30px;
+         font-weight: 100;
          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          color: black;
          
       }
-
-      .iframe{
-         display: flex;
-         flex-direction: column;
-         text-align: center;
-         padding: 30px;
-        }
         
         .escu{
              padding: 20px;
@@ -295,16 +283,6 @@ main{
              font-weight: 200;
  
           }
-
-    .foto{
-
-      transition-property: all;
-      transition-duration: 1s;
-   }
-   .foto:hover{
-       transform: scale(1.5);
-   }
-   
     
    @keyframes entrada {
       0%{
