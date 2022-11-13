@@ -34,14 +34,14 @@ header {
     animation-duration: 2s;
     animation-timing-function: ease-in-out; }
     header .titulo h1 {
-      color: #fdfdfd;
+      color: white;
       padding: 50px;
       margin: 30px;
       font-size: 50px;
       font-weight: 300;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
     header .titulo .lucas {
-      color: aliceblue;
+      color: white;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: 100; }
   header .caja {
@@ -54,7 +54,7 @@ header {
     flex-direction: column;
     text-align: center; }
   header .be {
-    color: #fdfdfd;
+    color: white;
     padding: 50px;
     margin: 30px;
     font-size: 60px;
@@ -75,7 +75,7 @@ header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     font-weight: 200;
-    color: aliceblue; }
+    color: white; }
   header .texto {
     padding: 10px;
     display: flex;
@@ -84,7 +84,7 @@ header {
     font-size: 25px;
     font-weight: 200;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue; }
+    color: white; }
   header .texto {
     padding: 10px; }
   header .formulario {
@@ -96,7 +96,7 @@ header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     font-weight: 200;
-    color: aliceblue; }
+    color: white; }
   header .form {
     display: flex;
     flex-direction: column;
@@ -106,13 +106,13 @@ header {
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
-    color: aliceblue; }
+    color: white; }
     header .form .btn {
       margin: 10px;
       font-size: 25px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: 200;
-      color: aliceblue;
+      color: white;
       transition-property: all;
       transition-duration: 1s; }
     header .form .btn:hover {
@@ -127,7 +127,7 @@ header {
     padding: 20px; }
   header .hablamos {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
+    color: white;
     font-size: 60px;
     font-weight: 100; }
 
@@ -203,15 +203,15 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      color: aliceblue;
+      color: white;
       text-align: center;
       margin: 10px;
       font-size: 20px; }
     main .lista h3 {
-      color: aliceblue;
+      color: white;
       font-size: 30px; }
     main .lista .bi {
-      color: aliceblue;
+      color: white;
       height: 60px;
       width: 60px; }
   main .contacto {
@@ -371,25 +371,33 @@ footer {
     font-weight: 100;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
   header {
-    box-sizing: border-box;
-    justify-content: space-evenly; }
+    padding: 40px;
+    height: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; }
     header .titulo h1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 100px;
       font-weight: 200;
-      padding: 0%;
-      margin: 0%; }
+      padding: 40px;
+      margin: 40px; }
     header .lucas {
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: 100;
       font-size: 50px; }
     header .contacto {
-      flex-direction: row;
-      padding: 20px;
-      margin: 100px;
+      flex-direction: column;
+      justify-content: space-evenly;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 50px 100px;
+      grid-template-rows: 10px 90px;
       grid-column-gap: 20px;
       grid-row-gap: 20px; }
     header .texto {
@@ -400,18 +408,19 @@ footer {
       font-size: 30px;
       font-weight: 200;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      color: aliceblue; }
+      color: white; }
     header .formulario {
-      display: block;
-      flex-direction: column; }
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
     header .formu {
       display: flex;
       text-align: center;
       justify-content: center;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-size: 50px;
+      font-size: 40px;
       font-weight: 200;
-      color: aliceblue; }
+      color: white; }
     header .form {
       display: flex;
       flex-direction: column;
@@ -421,14 +430,14 @@ footer {
       font-size: 30px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: 300;
-      color: aliceblue; }
+      color: white; }
     header .hablamos {
       display: flex;
       flex-direction: column;
       text-align: center;
       padding: 20px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      color: aliceblue;
+      color: white;
       font-size: 60px;
       font-weight: 100; }
   @keyframes entrada {
@@ -449,8 +458,13 @@ footer {
       flex-direction: column;
       justify-content: center;
       padding: 40px;
-      margin: 60px; }
+      margin: 60px;
+      transition-property: all;
+      transition-duration: 1s; }
+    main .text:hover {
+      transform: scale(1.1); }
     main .parr {
+      color: black;
       font-size: 30px;
       text-align: center;
       justify-content: center; }
@@ -459,8 +473,8 @@ footer {
       display: flex;
       flex-direction: column;
       text-align: center;
-      height: 1000px;
-      justify-content: space-between; }
+      height: 100;
+      min-height: 100vh; }
       main .servicio p {
         color: white;
         display: block;
@@ -540,7 +554,7 @@ footer {
       justify-content: center;
       align-items: center;
       padding: 0px;
-      font-size: 30px;
+      font-size: 20px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: 300; }
     main .album {
@@ -556,6 +570,11 @@ footer {
       display: flex;
       flex-direction: column;
       padding: 30px; }
+    main .rounded {
+      transition-property: all;
+      transition-duration: 1s; }
+    main .rounded:hover {
+      transform: scale(1.3); }
     main .titulo {
       display: flex;
       flex-direction: column;
@@ -607,6 +626,16 @@ footer {
       color: black;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-weight: 200; }
+    main .red .bi {
+      padding: 5px;
+      color: white;
+      text-align: center;
+      justify-content: center;
+      margin: 5px;
+      transition-property: all;
+      transition-duration: 1s; }
+    main .red .bi:hover {
+      transform: scale(1.9); }
   @keyframes entrada {
     0% {
       transform: translateY(-500px); }

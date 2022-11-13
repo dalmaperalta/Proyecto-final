@@ -1,3 +1,5 @@
+@import"variables";
+
 main{
    height: 100;
    min-height: 100vh;
@@ -25,17 +27,18 @@ main{
       left:0;
       width:100%;
       height: 90px;
-     background-color: rgb(0, 0, 0);
+     background-color: $color-primario;
 
     }
     
     .red{
         padding: 3px;
-        color:rgb(255, 255, 255);
+        color:$color-secundario;
         text-align: center;
         justify-content: center;
         margin: 5px;
      }
+     
     
 
      .text{
@@ -69,7 +72,7 @@ main{
         font-size: 60px;
         font-weight: 300;
         padding: 20px;
-        color: rgb(255, 255, 255);
+        color: $color-secundario;
 
             
     transform: translateY (-500px);
@@ -90,7 +93,7 @@ main{
          display:flex;
          flex-direction: column;
          justify-content:center;
-         color: aliceblue;
+         color: $color-secundario;
          text-align: center;
          margin:  10px;
          font-size: 20px;
@@ -98,12 +101,12 @@ main{
        }
 
        h3{
-         color:aliceblue;
+         color:$color-secundario;
          font-size: 30px;
        }
 
        .bi{
-         color: aliceblue;
+         color: $color-secundario;
          height: 60px;
          width: 60px;
        }
@@ -188,7 +191,7 @@ main{
          h1 {
             padding: 20px;
             font-size: 30px;
-            color: rgb(0, 0, 0);
+            color: $color-primario;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: 200;
 
@@ -196,7 +199,7 @@ main{
          h2{
             padding: 20px;
             font-size: 20px;
-            color: rgb(0, 0, 0);
+            color: $color-primario;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: 100;
 
@@ -204,11 +207,10 @@ main{
          h3{
             padding: 20px;
             font-size: 20px;
-            color: rgb(0, 0, 0);
+            color: $color-primario;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: 100;
 
-         
          }
 
       } 
@@ -271,14 +273,14 @@ main{
          font-size: 30px;
          font-weight: 100;
          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-         color: black;
+         color: $color-primario;
          
       }
         
         .escu{
              padding: 20px;
              font-size: 30px;
-             color: rgb(0, 0, 0);
+             color:$color-primario;
              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
              font-weight: 200;
  
