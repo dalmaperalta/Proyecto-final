@@ -1,7 +1,6 @@
 header{
-    background-image: url(../img/img01.jpg);
+    background-image: url(../img/c.jpg);
     height: 100vh;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,75 +62,60 @@ header{
     }
 
            
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
         
-
-   .co{
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    color: aliceblue;
-   }
-
-   .contac{
-    text-align: center;
-    color: rgb(253, 253, 253);
-    padding: 30px;
-    margin: 20px;
-    font-size: 50px;
-    font-weight: 300;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-      
-    transform: translateY (-500px);
-    animation-name: entrada ;
-    animation-duration:2s;
-    animation-timing-function: ease-in-out;
- 
-}
-
-.texto{
-    padding: 10px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: 200;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-  .fo{display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-
-  }
-
-  .formu{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
-    font-weight: 200;
-    color: aliceblue;
-  }
-
-  .formulario{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    padding: 10px;}
-
-    .form{
+  
+       }
+       
+       .contac{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        font-weight: 200;
+        color: aliceblue;
+  
+       }
+       .texto{
+        padding: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: 200;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: aliceblue;
+       }
+        
+       
+       .texto{
+        padding: 10px;
+       }
+        
+       .formulario{
+        padding: 10px;
+       }
+  
+       .formu{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        font-weight: 200;
+        color: aliceblue;
+       }
+       .form{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
         padding: 5px;
-        font-size: 20px;
+        font-size: 30px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: 200;
         color: aliceblue;
@@ -142,20 +126,36 @@ header{
            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
            font-weight: 200;
            color: aliceblue;
-
+           
+  
            transition-property: all;
            transition-duration: 1s;
         }
         .btn:hover{
             transform: scale(1);
         }
-  
-       }
+     }
+    
+     
+       
        .div{
        text-align: center;
        }
 
-  
+       .titulo-hablamos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+       }
+
+     .hablamos{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    font-size: 60px;
+    font-weight: 100;
+  }
 
    @keyframes entrada {
     0%{
